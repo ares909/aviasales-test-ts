@@ -1,6 +1,9 @@
+import { ticketDuration, ticketRoute, ticketStops, ticketTimeFrame } from "../utils/dataFormatters";
+
 export interface Iticket {
     price: number;
     carrier: string;
+    id?: number;
     segments: [
         {
             origin: string;
@@ -22,4 +25,12 @@ export interface Iticket {
 export interface IResponse {
     tickets: Iticket[];
     stop: boolean;
+}
+
+export interface ITicketData {
+    origin: string;
+    destination: string;
+    date: string;
+    stops: string[];
+    duration: number;
 }
