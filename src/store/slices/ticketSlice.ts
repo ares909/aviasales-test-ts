@@ -6,6 +6,9 @@ import { RootState } from "../../models/RootState";
 const initialState: RootState = {
     searchId: { data: "", status: "idle", error: null },
     tickets: { data: [], status: "idle", error: null, stop: false },
+    filters: { name: "Самый дешевый" },
+    sorted: [],
+    stops: ["all"],
 };
 
 export const ticketsSlice = createSlice({
@@ -21,6 +24,33 @@ export const ticketsSlice = createSlice({
                     error: initialState.tickets.error,
                     stop: state.tickets.stop,
                 },
+            };
+        },
+        setFilter(state, action: PayloadAction<{ filters: { name: string | null } }>) {
+            return {
+                ...state,
+                filters: { name: action.payload.filters.name },
+            };
+        },
+
+        setSortedArray(state, action: PayloadAction<{ sorted: Iticket[] }>) {
+            return {
+                ...state,
+                ...action.payload,
+            };
+        },
+
+        setStops(state, action: PayloadAction<any[]>) {
+            return {
+                ...state,
+                stops: action.payload,
+            };
+        },
+
+        resetStops(state) {
+            return {
+                ...state,
+                stops: initialState.stops,
             };
         },
     },
@@ -50,5 +80,5 @@ export const ticketsSlice = createSlice({
         },
     },
 });
-export const { resetTicketError } = ticketsSlice.actions;
+export const { resetTicketError, setFilter, setSortedArray, setStops, resetStops } = ticketsSlice.actions;
 export default ticketsSlice.reducer;

@@ -1,7 +1,31 @@
+@import "src/styles/colors";
 .container {
-  min-width: 502px;
-  max-width: 502px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto 0;
+    min-width: 502px;
+    max-width: 502px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0;
+
+}
+
+.button {
+    min-width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: $MainAccent;
+    color: $White;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 15px 0 15px;
+    border-radius: 5px;
+    &:hover {
+        opacity: 0.8;
+    }
+
 }

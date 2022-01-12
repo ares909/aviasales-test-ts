@@ -8,4 +8,9 @@ export interface RootState {
         error: string | null;
         stop: boolean;
     };
+    filters: {
+        name: string | null;
+    };
+    sorted: Iticket[];
+    stops: any[];
 }

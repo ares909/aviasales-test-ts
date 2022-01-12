@@ -1,0 +1,29 @@
+@import "../../../styles/colors";
+.checkBoxBar {
+  display: flex;
+  flex-direction: column;
+  min-width: 232px;
+  max-width: 232px;
+  box-sizing: border-box;
+  padding: 20px;
+  background: $White;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  height: fit-content;
+  margin-right: 20px;
+}
+.barHeader {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: $GrayDark;
+  margin: 0 0 20px;
+}
+
+.checkBoxContainer {
+  display: flex;
+  flex-direction: column;
+}

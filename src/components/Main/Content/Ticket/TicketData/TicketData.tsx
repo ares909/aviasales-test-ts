@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import styles from "../Ticket.module.scss";
 import { ticketDataObj } from "../../../../../constants/constants";
+import styles from "../Ticket.module.scss";
 
 interface ITicketData {
     data: {

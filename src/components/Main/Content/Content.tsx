@@ -3,6 +3,7 @@ import { useAppDispatch, useAppSelector } from "../../../store/hooks";
 import { fetchSearchId, fetchTickets } from "../../../store/actions/actions";
 import { resetTicketError } from "../../../store/slices/ticketSlice";
 import TicketContainer from "./TicketContainer/TicketContainer";
+import CheckBoxBar from "../CheckBoxBar/CheckBoxBar";
 import styles from "./Content.module.scss";
 
 const Content = () => {
@@ -35,7 +36,8 @@ const Content = () => {
         }
     }, [searchId, ticketsStatus, stop]);
     return (
-        <section>
+        <section className={styles.content}>
+            <CheckBoxBar />
             <TicketContainer tickets={ticketData} />
         </section>
     );

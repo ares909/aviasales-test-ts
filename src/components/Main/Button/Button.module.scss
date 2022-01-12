@@ -1,0 +1,31 @@
+@import "src/styles/colors";
+
+
+.button {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: $GrayDark;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-right: 1px solid #dfe5ec;
+    box-sizing: border-box;
+    background-color: $White;
+    padding: 15px;
+    transition: opacity 0.1s ease 0s;
+    text-transform: uppercase;
+    &:last-of-type {
+        border-right: none;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.buttonActive {
+    @extend .button;
+    color: $White;
+    background: $MainAccent;
+}
