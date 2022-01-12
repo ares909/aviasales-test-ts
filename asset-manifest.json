@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.daf21008.css",
-    "main.js": "/static/js/main.3514c4c1.js",
-    "static/media/OpenSans-SemiBold.ttf": "/static/media/OpenSans-SemiBold.a16d8201b06a03c6c365.ttf",
-    "static/media/OpenSans-Regular.ttf": "/static/media/OpenSans-Regular.1b0809d519837cb7aad3.ttf",
-    "static/media/logo.svg": "/static/media/logo.472c04511e4ad43b5d411bb650acb7a9.svg",
-    "index.html": "/index.html",
-    "main.daf21008.css.map": "/static/css/main.daf21008.css.map",
-    "main.3514c4c1.js.map": "/static/js/main.3514c4c1.js.map"
+    "main.css": "/aviasales-test-ts/static/css/main.2e5f3fca.css",
+    "main.js": "/aviasales-test-ts/static/js/main.4e54ad77.js",
+    "static/media/OpenSans-SemiBold.ttf": "/aviasales-test-ts/static/media/OpenSans-SemiBold.a16d8201b06a03c6c365.ttf",
+    "static/media/OpenSans-Regular.ttf": "/aviasales-test-ts/static/media/OpenSans-Regular.1b0809d519837cb7aad3.ttf",
+    "static/media/logo.svg": "/aviasales-test-ts/static/media/logo.472c04511e4ad43b5d411bb650acb7a9.svg",
+    "index.html": "/aviasales-test-ts/index.html",
+    "main.2e5f3fca.css.map": "/aviasales-test-ts/static/css/main.2e5f3fca.css.map",
+    "main.4e54ad77.js.map": "/aviasales-test-ts/static/js/main.4e54ad77.js.map"
   },
   "entrypoints": [
-    "static/css/main.daf21008.css",
-    "static/js/main.3514c4c1.js"
+    "static/css/main.2e5f3fca.css",
+    "static/js/main.4e54ad77.js"
   ]
 }
